@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Grades Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Student Grades Management System</h1>
+    </header>
+    <div class="container">
+        <form id="student-form">
+            <input type="text" id="student-name" placeholder="Student Name" required>
+            <input type="number" id="student-grade" placeholder="Grade" min="0" max="100" required>
+            <button type="submit">Add Student</button>
+        </form>
+        <ul id="student-list"></ul>
+        <div class="average-container">
+            <h3>Average Grade: <span id="average-grade">0</span></h3>
+        </div>
+        <button id="clear-all" class="clear-button">Clear All</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
